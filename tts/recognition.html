@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <div class="links">
+            <ul>
+                <li>  <a href="index.html">Present Feature Page</a></li>
+                <li> <a href="speak.html">Added Feature 1</a></li>
+            </ul>
+           
+            
+        </div>
+        <p class="heading">Speech Recognition App</p>
+        <div class="options">
+            <div class="language">
+                <p>Language</p>
+                <select name="language" id="language">
+
+                </select>
+            </div>
+        </div>
+        <div class="line"></div>
+            <button class="btn record">
+                <div class="icon">
+                    <img src="data:image/png;base64,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">
+                </div>
+                <p>Start Listening</p>
+            </button>
+            <p class="heading2">Result</p>
+            <div class="result" spellcheck="false">
+                <p class="interim"></p> 
+            </div>
+            <div class="buttons">
+                <button class="btn clear" >
+                    <img width="20" height="20" src="https://img.icons8.com/dotty/80/broom.png" alt="broom"/>
+                    <p>Clear</p>
+                </button>
+                <button class="btn download" disabled>
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/download--v1.png" alt="download--v1"/>
+                    <p>Download</p>
+                </button>
+            </div>
+           
+               
+    </div>
+
+    
+    
+
+    <script src="languages.js"></script>
+    <script src="recognition.js"></script>
+</body>
+</html>
